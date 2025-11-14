@@ -6,6 +6,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerGeneration"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:paddingBottom="4dp"
+        android:clipToPadding="false"/>
 
 </FrameLayout>

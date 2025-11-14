@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
         NavigationUI.setupWithNavController(binding.bottomNavigationView, navController);
+
+        binding.bottomNavigationView.setItemIconTintList(null);
     }
     @Override
     public boolean onSupportNavigateUp() {
