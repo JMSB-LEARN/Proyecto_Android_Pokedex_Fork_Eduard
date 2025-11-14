@@ -20,6 +20,11 @@
         android:name="es.iesagora.generador_de_cartas.generadorFragment"
         android:label="@string/generador"
         tools:layout="@layout/fragment_generador" />
+    <fragment
+        android:id="@+id/detallesFragment"
+        android:name="es.iesagora.generador_de_cartas.detallesFragment"
+        android:label="fragment_detalles"
+        tools:layout="@layout/fragment_detalles" />
 </navigation>
 
 
