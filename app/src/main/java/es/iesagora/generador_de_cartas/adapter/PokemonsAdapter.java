@@ -50,13 +50,9 @@ public class PokemonsAdapter extends RecyclerView.Adapter<PokemonsAdapter.Pokemo
         holder.binding.tvNombre.setText(pokemon.getNombre());
         holder.binding.ivPokemon.setImageResource(pokemon.getImage());
 
-        holder.itemView.setOnClickListener(v -> {
-            Bundle bundle = new Bundle();
-            bundle.putSerializable("detalles", pokemon);
-
-            NavController navController = Navigation.findNavController(v);
-            navController.navigate(R.id.action_pokedexFragment_to_detallesFragment, bundle);
-        });
+        holder.itemView.setOnClickListener(v ->
+                listener.onPokemonClick(pokemon)
+        );
     }
 
     @Override

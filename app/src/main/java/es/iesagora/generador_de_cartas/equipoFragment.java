@@ -45,9 +45,11 @@ public class equipoFragment extends Fragment {
         adapter = new PokemonsAdapter(listaEquipo, pokemon -> {
             Bundle bundle = new Bundle();
             bundle.putSerializable("detalles", pokemon);
-            Navigation.findNavController(view)
-                    .navigate(R.id.action_pokedexFragment_to_detallesFragment, bundle);
+
+            Navigation.findNavController(requireView())
+                    .navigate(R.id.action_equipoFragment_to_detallesFragment2, bundle);
         });
+
 
         binding.rvEquipo.setAdapter(adapter);
         binding.rvEquipo.setLayoutManager(new GridLayoutManager(requireContext(), 2));

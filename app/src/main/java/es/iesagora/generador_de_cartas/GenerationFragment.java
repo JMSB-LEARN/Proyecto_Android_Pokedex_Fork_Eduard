@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import es.iesagora.generador_de_cartas.adapter.PokemonsAdapter;
@@ -48,7 +49,11 @@ public class GenerationFragment extends Fragment {
         PokemonsAdapter adapter = new PokemonsAdapter(
                 repository.getPokemonsByGeneration(gen),
                 pokemon -> {
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("detalles", pokemon);
 
+                    Navigation.findNavController(requireView())
+                            .navigate(R.id.action_pokedexFragment_to_detallesFragment, bundle);
                 }
         );
 

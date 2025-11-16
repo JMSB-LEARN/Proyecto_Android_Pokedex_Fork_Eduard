@@ -8,4 +8,6 @@
     <string name="texto_equipo">No tienes Pokémon en el equipo.</string>
     <string name="duplicado">Ya tienes este Pokémon en tu equipo</string>
     <string name="anadido"> añadido al equipo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -38,7 +38,7 @@ public class pokedexFragment extends Fragment {
 
             @Override
             public int getItemCount() {
-                return 3; // Gen I, Gen II, Gen III
+                return 3;
             }
         });
 

@@ -9,7 +9,11 @@
         android:id="@+id/equipoFragment"
         android:name="es.iesagora.generador_de_cartas.equipoFragment"
         android:label="@string/tu_equipo"
-        tools:layout="@layout/fragment_equipo" />
+        tools:layout="@layout/fragment_equipo" >
+        <action
+            android:id="@+id/action_equipoFragment_to_detallesFragment2"
+            app:destination="@id/detallesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/pokedexFragment"
         android:name="es.iesagora.generador_de_cartas.pokedexFragment"
