@@ -2,58 +2,10 @@
     <string name="app_name">Generador_de_cartas</string>
     <string name="tu_equipo">Tu equipo</string>
     <string name="pokedex">Pokédex</string>
-    <string name="generador">Generador pokémon</string>
+    <string name="generador">Generador Pokémon</string>
     <string name="generar">Generar Pokémon</string>
     <string name="detalles">Detalles Pokémon</string>
     <string name="texto_equipo">No tienes Pokémon en el equipo.</string>
-
-    <!-- Pokemons 1GEN -->
-    <string name="mewtwo">Mewtwo</string>
-    <string name="mew">Mew</string>
-    <string name="pikachu">Pikachu</string>
-    <string name="blastoise">Blastoise</string>
-    <string name="bulbasaur">Bulbasaur</string>
-    <string name="charizard">Charizard</string>
-    <string name="charmander">Charmander</string>
-    <string name="charmeleon">Charmeleon</string>
-    <string name="ivysaur">Ivysaur</string>
-    <string name="raichu">Raichu</string>
-    <string name="squirtle">Squirtle</string>
-    <string name="venusaur">Venusaur</string>
-    <string name="wartortle">Wartortle</string>
-
-    <!-- Pokemons 2GEN -->
-    <string name="typhlosion">Typhlosion</string>
-    <string name="lugia">Lugia</string>
-    <string name="bayleef">Bayleef</string>
-    <string name="celebi">Celebi</string>
-    <string name="chikorita">Chikorita</string>
-    <string name="croconaw">Croconaw</string>
-    <string name="cyndaquil">Cyndaquil</string>
-    <string name="feraligatr">Feraligatr</string>
-    <string name="furret">Furret</string>
-    <string name="hooh">Ho-Oh</string>
-    <string name="meganium">Meganium</string>
-    <string name="quilava">Quilava</string>
-    <string name="totodile">Totodile</string>
-
-    <!-- Pokemons 3GEN -->
-
-    <string name="gardevoir">Gardevoir</string>
-    <string name="blaziken">Blaziken</string>
-    <string name="combusken">Combusken</string>
-    <string name="grovyle">Grovyle</string>
-    <string name="kirlia">Kirlia</string>
-    <string name="marshtomp">Marshtomp</string>
-    <string name="Mudkip">Mudkip</string>
-    <string name="ralts">Ralts</string>
-    <string name="rayquaza">Rayquaza</string>
-    <string name="sceptile">Sceptile</string>
-    <string name="swampert">Swampert</string>
-    <string name="torchik">Torchic</string>
-    <string name="treecko">Treecko</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
+    <string name="duplicado">Ya tienes este Pokémon en tu equipo</string>
+    <string name="anadido"> añadido al equipo</string>
 </resources>

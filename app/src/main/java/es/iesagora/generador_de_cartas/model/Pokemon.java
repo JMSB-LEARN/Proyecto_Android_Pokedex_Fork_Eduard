@@ -1,6 +1,7 @@
 package es.iesagora.generador_de_cartas.model;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Pokemon implements Serializable {
 
@@ -23,6 +24,7 @@ public class Pokemon implements Serializable {
         this.tipo1 = tipo1;
         this.tipo2 = tipo2;
     }
+
 
     public int getNumero() {
         return numero;
@@ -62,5 +64,25 @@ public class Pokemon implements Serializable {
 
     public void setTipo2(String tipo2) {
         this.tipo2 = tipo2;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Pokemon)) return false;
+
+        Pokemon p = (Pokemon) o;
+
+        return numero == p.numero &&
+                image == p.image &&
+                generacion == p.generacion &&
+                Objects.equals(nombre, p.nombre) &&
+                Objects.equals(detalles, p.detalles) &&
+                Objects.equals(tipo1, p.tipo1) &&
+                Objects.equals(tipo2, p.tipo2);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(numero, nombre, image, detalles, generacion, tipo1, tipo2);
     }
 }
