@@ -9,14 +9,14 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import es.iesagora.generador_de_cartas.databinding.ActivityMainBinding;
-import es.iesagora.generador_de_cartas.repository.EquipoRepository;
+import es.iesagora.generador_de_cartas.repository.PokemonRepository;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     private NavController navController;
     private AppBarConfiguration appBarConfiguration;
-    public EquipoRepository equipoRepository = new EquipoRepository();
+    public PokemonRepository equipoPokemon = new PokemonRepository(true);
 
 
     @Override

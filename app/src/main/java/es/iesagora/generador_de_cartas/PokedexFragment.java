@@ -14,7 +14,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 import es.iesagora.generador_de_cartas.databinding.FragmentPokedexBinding;
 
-public class pokedexFragment extends Fragment {
+public class PokedexFragment extends Fragment {
 
     private FragmentPokedexBinding binding;
 

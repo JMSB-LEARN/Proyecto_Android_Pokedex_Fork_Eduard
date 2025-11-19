@@ -15,7 +15,7 @@ import android.widget.TextView;
 import es.iesagora.generador_de_cartas.databinding.FragmentDetallesBinding;
 import es.iesagora.generador_de_cartas.model.Pokemon;
 
-public class detallesFragment extends Fragment {
+public class DetallesFragment extends Fragment {
 
     private FragmentDetallesBinding binding;
     private Pokemon pokemon;

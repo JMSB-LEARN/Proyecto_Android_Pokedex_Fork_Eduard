@@ -16,14 +16,14 @@ import android.view.ViewGroup;
 import es.iesagora.generador_de_cartas.adapter.PokemonsAdapter;
 import es.iesagora.generador_de_cartas.databinding.FragmentEquipoBinding;
 import es.iesagora.generador_de_cartas.model.Pokemon;
-import es.iesagora.generador_de_cartas.repository.EquipoRepository;
+import es.iesagora.generador_de_cartas.repository.PokemonRepository;
 
 import java.util.List;
 
-public class equipoFragment extends Fragment {
+public class EquipoFragment extends Fragment {
 
     private FragmentEquipoBinding binding;
-    private EquipoRepository repository;
+    private PokemonRepository repository;
     private PokemonsAdapter adapter;
     private List<Pokemon> listaEquipo;
 
@@ -38,8 +38,8 @@ public class equipoFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        repository = ((MainActivity) requireActivity()).equipoRepository;
-        listaEquipo = repository.getEquipo();
+        repository = ((MainActivity) requireActivity()).equipoPokemon;
+        listaEquipo = repository.getListaPokemons();
 
 
         adapter = new PokemonsAdapter(listaEquipo, pokemon -> {

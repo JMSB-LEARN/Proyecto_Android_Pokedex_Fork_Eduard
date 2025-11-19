@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/equipoFragment"
-        android:name="es.iesagora.generador_de_cartas.equipoFragment"
+        android:name="es.iesagora.generador_de_cartas.EquipoFragment"
         android:label="@string/tu_equipo"
         tools:layout="@layout/fragment_equipo" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/pokedexFragment"
-        android:name="es.iesagora.generador_de_cartas.pokedexFragment"
+        android:name="es.iesagora.generador_de_cartas.PokedexFragment"
         android:label="@string/pokedex"
         tools:layout="@layout/fragment_pokedex" >
         <action
@@ -25,12 +25,12 @@
     </fragment>
     <fragment
         android:id="@+id/generadorFragment"
-        android:name="es.iesagora.generador_de_cartas.generadorFragment"
+        android:name="es.iesagora.generador_de_cartas.GeneradorFragment"
         android:label="@string/generador"
         tools:layout="@layout/fragment_generador" />
     <fragment
         android:id="@+id/detallesFragment"
-        android:name="es.iesagora.generador_de_cartas.detallesFragment"
+        android:name="es.iesagora.generador_de_cartas.DetallesFragment"
         android:label="@string/detalles"
         tools:layout="@layout/fragment_detalles" >
         <argument

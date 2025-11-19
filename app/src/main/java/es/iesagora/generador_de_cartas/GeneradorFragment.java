@@ -15,15 +15,14 @@ import java.util.Random;
 
 import es.iesagora.generador_de_cartas.databinding.FragmentGeneradorBinding;
 import es.iesagora.generador_de_cartas.model.Pokemon;
-import es.iesagora.generador_de_cartas.repository.EquipoRepository;
 import es.iesagora.generador_de_cartas.repository.PokemonRepository;
 
-public class generadorFragment extends Fragment {
+public class GeneradorFragment extends Fragment {
 
     private FragmentGeneradorBinding binding;
 
+    private PokemonRepository equipoPokemon;
     private PokemonRepository pokemonRepository;
-    private EquipoRepository equipoRepository;
     private List<Pokemon> listaCompleta;
     private Random random = new Random();
 
@@ -39,8 +38,8 @@ public class generadorFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        pokemonRepository = new PokemonRepository();
-        equipoRepository = ((MainActivity) requireActivity()).equipoRepository;
+        pokemonRepository = new PokemonRepository(false);
+        equipoPokemon = ((MainActivity) requireActivity()).equipoPokemon;
 
         listaCompleta = pokemonRepository.getListaPokemons();
 
@@ -57,14 +56,14 @@ public class generadorFragment extends Fragment {
         binding.textViewNombre.setText(randomPoke.getNombre());
         binding.textViewNumero.setText("Nº " + randomPoke.getNumero());
 
-        List<Pokemon> equipo = equipoRepository.getEquipo();
+        List<Pokemon> equipo = equipoPokemon.getListaPokemons();
 
         if (equipo.contains(randomPoke)) {
             Toast.makeText(requireContext(),
                     getString(R.string.duplicado),
                     Toast.LENGTH_SHORT).show();
         } else {
-            equipoRepository.anadirPokemon(randomPoke);
+            equipoPokemon.anadirPokemon(randomPoke);
             Toast.makeText(requireContext(),
                     randomPoke.getNombre() + getString(R.string.anadido),
                     Toast.LENGTH_SHORT).show();

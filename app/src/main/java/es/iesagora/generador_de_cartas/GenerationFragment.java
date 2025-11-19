@@ -42,7 +42,7 @@ public class GenerationFragment extends Fragment {
 
         gen = getArguments().getInt(ARG_GEN);
 
-        PokemonRepository repository = new PokemonRepository();
+        PokemonRepository repository = new PokemonRepository(false);
 
         binding.recyclerGeneration.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
